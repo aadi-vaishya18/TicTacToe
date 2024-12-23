@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #8a817c;
+    font-family: "Roboto", serif;
+}
+
+.nav {
+    background-color: black;
+    font-size: 35px;
+    padding: 0 15px;
+    color: whitesmoke;
+    height: 55px;
+    align-items: center;
+    display: flex;
+    font-family: "Dancing Script", serif;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+}
+
+.container {
+    margin-top: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro {
+    text-align: center;
+    font-size: 24px;
+    color: whitesmoke;
+    margin-bottom: 50px;
+}
+
+.info
+{
+    /* margin-bottom:1000px; */
+    /* padding: 200px; */
+    font-style: italic;
+    font-size: large;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    background-color: black; 
+    cursor: pointer;
+}
+
+.box {
+    background-color: #8a817c;
+    font-size: 4vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", serif;
+    border : 2px solid black;
+}
+
+.bl {border-left: 0;}
+
+.bt {border-top: 0;}
+
+.br {border-right: 0;}
+
+.bb {border-bottom: 0;}
+
+.box:hover {
+    background-color: #505050;
+    color: #ffefc3;
+}
+
+/* .text {
+    font-size: large;
+} */
+#reset {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 50px; 
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: #505050;
+    color: #ffefc3;
+}
+
+@media screen and (max-width: 400px) 
+{
+    .container
+    {
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    .intro
+    {
+        margin-top: 34px;
+    }
+    .info{
+        align-self: center;
+    }
+    .grid
+    {
+        grid-template-rows: repeat(3, 50vw);
+        grid-template-columns: repeat(3, 50vw);
+    }           
+}
