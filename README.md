@@ -1,3 +1,6 @@
+
+You can acces it at :- https://aadi-vaishya18.github.io/TicTacToe/
+
 ### Tic Tac Toe Project
 
 #### Overview
@@ -56,4 +59,3 @@ This project is a browser-based **Tic Tac Toe** game designed for two players. I
 - Implement animations for winning combinations.
 - Allow customization of game colors and themes.
 
-You can acces it at :- https://aadi-vaishya18.github.io/TicTacToe/
